@@ -1,0 +1,33 @@
+.input {
+    display: block;
+    height: 60px;
+    padding: 0 30px;
+
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 30px;
+    border: none;
+
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: inherit;
+
+    &::placeholder {
+        color: inherit;
+    }
+
+    &:focus {
+        outline: none;
+        background: rgba(0, 0, 0, 1);
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        padding: 0 46px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        padding: 0 36px;
+    }
+}

@@ -1,0 +1,136 @@
+.focus {
+    padding-top: 80px;
+    padding-bottom: 40px;
+
+    overflow-x: hidden;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        padding-bottom: 0;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.focus__row {
+    display: flex;
+    justify-content: space-between;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        flex-direction: row-reverse;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        flex-direction: column;
+    }
+}
+
+.focus__img {
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        width: 420px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        width: 170px;
+
+        img {
+            max-width: unset;
+            width: 415px;
+        }
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        width: 100%;
+        margin-bottom: 10px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.focus__content {
+    width: 470px;
+    padding-top: 28px;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        width: 420px;
+        padding-top: 20px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        width: 370px;
+        padding-top: 0;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.focus__header {
+    margin-bottom: 30px;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
+}
+
+
+.focus__title {
+    margin-bottom: 30px;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        margin-bottom: 10px;
+    }
+}
+
+.focus__text {
+    width: 400px;
+    color: $paragrafColor;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2.14;
+
+    & p+p {
+        margin-top: 1em;
+    }
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        width: unset;
+        max-width: 420px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        line-height: 1.71;
+    }
+}

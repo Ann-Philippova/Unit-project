@@ -1,0 +1,146 @@
+.tasks {
+    padding-top: 80px;
+    padding-bottom: 40px;
+
+    border-bottom: 1px solid #e1e1e1;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        padding-bottom: 10px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.tasks-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 114px;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        padding-left: 75px;
+        padding-right: 0;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        padding-left: 0;
+        flex-direction: row-reverse;
+        align-items: start;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        flex-direction: column-reverse;
+    }
+}
+
+.tasks__content {
+    width: 570px;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        width: 495px;
+        padding-bottom: 10px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        width: 270px;
+        padding-top: 7px;
+        padding-bottom: 0;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        text-align: center;
+        width: 100%;
+        padding-top: 0;
+    }
+}
+
+.tasks__header {
+    margin-bottom: 30px;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
+}
+
+.tasks__title {
+    margin-bottom: 30px;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        margin-bottom: 10px;
+    }
+}
+
+.tasks__text {
+    width: 400px;
+
+    color: $paragrafColor;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2.14;
+
+    & p+p {
+        margin-top: 1em;
+    }
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        width: unset;
+        max-width: 420px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        line-height: 1.71;
+    }
+}
+
+.tasks__img {
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        width: 265px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        width: 270px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+
+        img {
+            width: 270px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
